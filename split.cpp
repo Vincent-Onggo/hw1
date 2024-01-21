@@ -18,26 +18,31 @@ void split(Node*& in, Node*& odds, Node*& evens)
 {
     /* Add code here */
 // WRITE YOUR CODE HERE
-    if(in == nullptr){
+    if(in == nullptr) {
         return;
     }
-
     if(in->value % 2 == 0){
         insertion(evens, in->value);
     }else{
         insertion(odds, in->value);
     }
+    Node* temp = in;
+    in = in->next;
+    temp->next = nullptr;
+    delete temp;
+    split(in, odds, evens);
+
 }
 
 /* If you needed a helper function, write it here */
-void insertion(Node*& list, int value){
+void insertion(Node*& list, int value){ // insert value to the end of the linked list
     if(list == nullptr){ // if list is empty insert
-        list->value = value;
-        list->next = nullptr;
+        list = new Node(value, nullptr);
         return;
     }
     if(list->next == nullptr){
         list->next = new Node(value, nullptr); // if list->next is still nullptr.
+        return;
     }
 
     insertion(list->next, value); // go to next element

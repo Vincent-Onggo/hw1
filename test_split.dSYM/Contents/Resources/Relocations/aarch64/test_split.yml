@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     test_split
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003C80, symSize: 0x98 }
+  - { offsetInCU: 0x2C71, offset: 0x2C71, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003C80, symSize: 0x98 }
+  - { offsetInCU: 0x2D14, offset: 0x2D14, size: 0x8, addend: 0x0, symName: __ZN4NodeC1EiPS_, symObjAddr: 0x98, symBinAddr: 0x100003D18, symSize: 0x3C }
+  - { offsetInCU: 0x2D58, offset: 0x2D58, size: 0x8, addend: 0x0, symName: __ZN4NodeC2EiPS_, symObjAddr: 0xD4, symBinAddr: 0x100003D54, symSize: 0x2C }
+  - { offsetInCU: 0x26, offset: 0x2DC2, size: 0x8, addend: 0x0, symName: __Z5splitRP4NodeS1_S1_, symObjAddr: 0x0, symBinAddr: 0x100003D80, symSize: 0xCC }
+  - { offsetInCU: 0x28C3, offset: 0x565F, size: 0x8, addend: 0x0, symName: __Z5splitRP4NodeS1_S1_, symObjAddr: 0x0, symBinAddr: 0x100003D80, symSize: 0xCC }
+  - { offsetInCU: 0x2907, offset: 0x56A3, size: 0x8, addend: 0x0, symName: __Z9insertionRP4Nodei, symObjAddr: 0xCC, symBinAddr: 0x100003E4C, symSize: 0xE0 }
+...
